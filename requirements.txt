@@ -1,0 +1,11 @@
+transformers 
+peft 
+trl 
+bitsandbytes 
+accelerate 
+datasets 
+langchain 
+faiss-cpu 
+sentence-transformers 
+pandas 
+wandb 
