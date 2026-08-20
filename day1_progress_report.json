@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-20T14:05:01.841151",
+  "documents_processed": 2,
+  "extraction_status": {
+    "nta": {
+      "status": "completed",
+      "pages_processed": 215,
+      "ocr_pages": 0,
+      "output_path": "data/interim/extracted/nta/"
+    },
+    "ntaa": {
+      "status": "completed",
+      "pages_processed": 215,
+      "ocr_pages": 0,
+      "output_path": "data/interim/extracted/ntaa/"
+    }
+  },
+  "deliverables": {
+    "metadata": [
+      "metadata/nta.json",
+      "metadata/ntaa.json"
+    ],
+    "extracted_texts": [
+      "data/interim/extracted/nta/",
+      "data/interim/extracted/ntaa/"
+    ],
+    "inspections": [
+      "NTA_inspection.json",
+      "NTAA_inspection.json"
+    ]
+  }
+}

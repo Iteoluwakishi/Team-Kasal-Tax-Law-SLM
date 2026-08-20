@@ -1,0 +1,13 @@
+{
+  "document_id": "nta",
+  "total_chunks": 336,
+  "empty_chunks": 0,
+  "total_characters": 348876,
+  "total_words": 62159,
+  "issues": [
+    "Chunk nta_chunk_0002 is suspiciously short (<10 chars).",
+    "Chunk nta_chunk_0003 is suspiciously short (<10 chars).",
+    "Chunk nta_chunk_0004 is suspiciously short (<10 chars).",
+    "Chunk nta_chunk_0005 is suspiciously short (<10 chars)."
+  ]
+}
