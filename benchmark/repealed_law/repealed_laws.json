@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "repealed_laws_registry": [
+    {
+      "code": "CITA",
+      "full_title": "Companies Income Tax Act Cap C21 LFN 2004",
+      "status": "repealed",
+      "effective_until": "2025-12-31",
+      "replaced_by": ["Nigeria Tax Act 2025"],
+      "key_repealed_provisions": [
+        "Section 19 (Excess Dividend Tax)",
+        "Section 33 (Minimum Tax Calculations)",
+        "Small business registration rules under CITA"
+      ]
+    },
+    {
+      "code": "PITA",
+      "full_title": "Personal Income Tax Act Cap P8 LFN 2004",
+      "status": "repealed",
+      "effective_until": "2025-12-31",
+      "replaced_by": ["Nigeria Tax Act 2025 (Chapter 2)"],
+      "key_repealed_provisions": [
+        "Section 33 (Consolidated Relief Allowance)",
+        "Legacy individual tax rate tables"
+      ]
+    },
+    {
+      "code": "PPTA",
+      "full_title": "Petroleum Profits Tax Act Cap P13 LFN 2004",
+      "status": "repealed",
+      "effective_until": "2025-12-31",
+      "replaced_by": ["Nigeria Tax Act 2025", "Petroleum Fiscal Framework"],
+      "key_repealed_provisions": [
+        "Legacy 85% Petroleum Profit Tax Rate"
+      ]
+    },
+    {
+      "code": "FIRS_ACT",
+      "full_title": "Federal Inland Revenue Service (Establishment) Act 2007",
+      "status": "repealed",
+      "effective_until": "2024-12-31",
+      "replaced_by": ["Nigeria Revenue Service (Establishment) Act 2025", "Nigeria Tax Administration Act 2025"],
+      "key_repealed_provisions": [
+        "Section 8 (FIRS Executive Powers)"
+      ]
+    },
+    {
+      "code": "VATA_1993",
+      "full_title": "Value Added Tax Act 1993 (as amended 2007)",
+      "status": "repealed",
+      "effective_until": "2025-12-31",
+      "replaced_by": ["Nigeria Tax Act 2025 (VAT Chapter)"],
+      "key_repealed_provisions": [
+        "Legacy VAT threshold and exemption lists"
+      ]
+    }
+  ]
+}

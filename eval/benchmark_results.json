@@ -1,0 +1,4018 @@
+{
+  "scoring_version": "Step 4 Multi-Metric v1.0",
+  "main_evaluation": {
+    "suite_name": "Main Evaluation Dataset",
+    "total_evaluated": 9,
+    "composite_score": 0.9415,
+    "critical_failure_rate": 0.0,
+    "total_critical_failures": 0,
+    "critical_failures_list": [],
+    "metric_breakdown": {
+      "legal_correctness": 1.0,
+      "factual_accuracy": 0.9579,
+      "legal_reasoning": 0.75,
+      "citation_accuracy": 1.0,
+      "citation_completeness": 1.0,
+      "current_law_accuracy": 0.9778,
+      "repealed_law_detection": 1.0,
+      "temporal_accuracy": 1.0,
+      "scenario_application": 0.75,
+      "abstention_quality": 1.0
+    },
+    "detailed_results": [
+      {
+        "id": "EVAL-RL-0001",
+        "category": "repealed_law_detection",
+        "question": "Under Section 19 of the Companies Income Tax Act (CITA) Cap C21 LFN 2004, what is the excess dividend tax rule?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and superseded by the Nigeria Tax Act 2025. The legacy Section 19 excess dividend tax rule has been abolished and restructured under NTA 2025 to prevent double taxation on retained company profits.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-AB-0001",
+        "category": "abstention",
+        "question": "Can you calculate the exact income tax liability for my Nigerian enterprise for the current tax year?",
+        "prediction": "Insufficient information to determine liability under Nigeria Tax Act 2025. Please specify turnover and entity details.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6207,
+          "legal_reasoning": 0.25,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 0.25,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-SA-0001",
+        "category": "scenario_application",
+        "question": "A Nigerian SME based in Kano achieves \u20a655,000,000 in gross turnover in 2025 and pays \u20a68,000,000 to independent contractors. What are its WHT remittance and annual return obligations under current law?",
+        "prediction": "1. Under WHT Regulations 2024, WHT deducted from sub-contractor payments must be remitted to NRS within 21 days following month-end (Regulation 4). 2. Under NTAA 2025, the SME must file its annual self-assessment return with NRS within 6 months of fiscal year-end (Section 14).",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 0.5,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 0.5,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-FA-0003",
+        "category": "factual_accuracy",
+        "question": "Which statutory board is established under the 2025 reforms to coordinate federal and state tax harmonization in Nigeria?",
+        "prediction": "The Joint Revenue Board of Nigeria (JRB), established under the Joint Revenue Board of Nigeria (Establishment) Act 2025.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 0.5,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 0.8,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 0.5,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-FA-0002",
+        "category": "factual_accuracy",
+        "question": "Under the Deduction of Tax at Source (Withholding) Regulations 2024, what is the mandatory timeframe for remitting deducted tax to the relevant authority?",
+        "prediction": "Deductions made under the Withholding Tax Regulations 2024 must be remitted within 21 days following the end of the calendar month in which the deduction occurred.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 0.5,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 0.5,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-CL-0001",
+        "category": "current_law_recognition",
+        "question": "Which federal revenue agency holds executive jurisdiction for collecting federal taxes in Nigeria under 2025 reform legislation?",
+        "prediction": "The Nigeria Revenue Service (NRS), established under the Nigeria Revenue Service (Establishment) Act 2025. It replaces the former Federal Inland Revenue Service (FIRS).",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-CC-0001",
+        "category": "citation_completeness",
+        "question": "Outline the statutory self-assessment filing obligations for Nigerian corporate entities, ensuring every obligation step includes its exact statutory citation.",
+        "prediction": "1. Annual self-assessment returns must be submitted within 6 months of financial year-end (Nigeria Tax Administration Act 2025, Section 14). 2. Returns must be accompanied by audited financial statements and tax computations (NTAA 2025, Section 15). 3. Tax due must be settled at filing or via an approved installment arrangement (NTAA 2025, Section 18).",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-RL-0002",
+        "category": "repealed_law_detection",
+        "question": "How is Consolidated Relief Allowance (CRA) calculated under Section 33 of the Personal Income Tax Act (PITA) Cap P8 LFN 2004?",
+        "prediction": "The Personal Income Tax Act (PITA) Cap P8 LFN 2004 has been repealed and incorporated into Chapter 2 of the Nigeria Tax Act 2025. Individual tax relief allowances are now governed by modern personal income tax bands and statutory relief provisions under NTA 2025.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "EVAL-LI-0001",
+        "category": "legal_interpretation",
+        "question": "Does a non-resident foreign vendor deriving income from digital downloads sold to Nigerian resident individuals have taxable nexus under NTA 2025?",
+        "prediction": "Yes. Under Section 5 & 12 of the Nigeria Tax Act 2025, non-resident entities providing digital services or digital products that generate significant economic presence or economic benefit from Nigerian consumers fall within the taxable scope.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 1.0,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      }
+    ]
+  },
+  "signature_repealed_benchmark": {
+    "suite_name": "Signature Repealed-Law Benchmark Suite",
+    "total_evaluated": 200,
+    "composite_score": 0.9367,
+    "critical_failure_rate": 0.0,
+    "total_critical_failures": 0,
+    "critical_failures_list": [],
+    "metric_breakdown": {
+      "legal_correctness": 1.0,
+      "factual_accuracy": 0.5783,
+      "legal_reasoning": 1.0,
+      "citation_accuracy": 1.0,
+      "citation_completeness": 1.0,
+      "current_law_accuracy": 1.0,
+      "repealed_law_detection": 1.0,
+      "temporal_accuracy": 1.0,
+      "scenario_application": 1.0,
+      "abstention_quality": 1.0
+    },
+    "detailed_results": [
+      {
+        "id": "RL-BENCH-0001",
+        "category": "repealed_law_detection",
+        "question": "Under Section 19 of the Companies Income Tax Act (CITA) Cap C21 LFN 2004, what is the current rule governing corporate dividend distributions for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0002",
+        "category": "repealed_law_detection",
+        "question": "Under Section 33 of the Personal Income Tax Act (PITA) Cap P8 LFN 2004, what is the current rule governing consolidated relief allowances for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0003",
+        "category": "repealed_law_detection",
+        "question": "Under Section 9 of the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004, what is the current rule governing upstream petroleum profit tax rates for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0004",
+        "category": "repealed_law_detection",
+        "question": "Under Section 8 of the Federal Inland Revenue Service (Establishment) Act 2007, what is the current rule governing tax debt enforcement powers for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0005",
+        "category": "repealed_law_detection",
+        "question": "Under Section 15 of the Value Added Tax Act 1993 (as amended 2007), what is the current rule governing statutory VAT registration thresholds for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0006",
+        "category": "repealed_law_detection",
+        "question": "Under Section 19 of the Companies Income Tax Act (CITA) Cap C21 LFN 2004, what is the current rule governing corporate dividend distributions for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0007",
+        "category": "repealed_law_detection",
+        "question": "Under Section 33 of the Personal Income Tax Act (PITA) Cap P8 LFN 2004, what is the current rule governing consolidated relief allowances for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0008",
+        "category": "repealed_law_detection",
+        "question": "Under Section 9 of the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004, what is the current rule governing upstream petroleum profit tax rates for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0009",
+        "category": "repealed_law_detection",
+        "question": "Under Section 8 of the Federal Inland Revenue Service (Establishment) Act 2007, what is the current rule governing tax debt enforcement powers for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0010",
+        "category": "repealed_law_detection",
+        "question": "Under Section 15 of the Value Added Tax Act 1993 (as amended 2007), what is the current rule governing statutory VAT registration thresholds for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0011",
+        "category": "repealed_law_detection",
+        "question": "Under Section 19 of the Companies Income Tax Act (CITA) Cap C21 LFN 2004, what is the current rule governing corporate dividend distributions for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0012",
+        "category": "repealed_law_detection",
+        "question": "Under Section 33 of the Personal Income Tax Act (PITA) Cap P8 LFN 2004, what is the current rule governing consolidated relief allowances for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0013",
+        "category": "repealed_law_detection",
+        "question": "Under Section 9 of the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004, what is the current rule governing upstream petroleum profit tax rates for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0014",
+        "category": "repealed_law_detection",
+        "question": "Under Section 8 of the Federal Inland Revenue Service (Establishment) Act 2007, what is the current rule governing tax debt enforcement powers for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0015",
+        "category": "repealed_law_detection",
+        "question": "Under Section 15 of the Value Added Tax Act 1993 (as amended 2007), what is the current rule governing statutory VAT registration thresholds for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0016",
+        "category": "repealed_law_detection",
+        "question": "Under Section 19 of the Companies Income Tax Act (CITA) Cap C21 LFN 2004, what is the current rule governing corporate dividend distributions for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0017",
+        "category": "repealed_law_detection",
+        "question": "Under Section 33 of the Personal Income Tax Act (PITA) Cap P8 LFN 2004, what is the current rule governing consolidated relief allowances for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0018",
+        "category": "repealed_law_detection",
+        "question": "Under Section 9 of the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004, what is the current rule governing upstream petroleum profit tax rates for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0019",
+        "category": "repealed_law_detection",
+        "question": "Under Section 8 of the Federal Inland Revenue Service (Establishment) Act 2007, what is the current rule governing tax debt enforcement powers for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0020",
+        "category": "repealed_law_detection",
+        "question": "Under Section 15 of the Value Added Tax Act 1993 (as amended 2007), what is the current rule governing statutory VAT registration thresholds for Nigerian entities in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0021",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of corporate dividend distributions under the Companies Income Tax Act (CITA) Cap C21 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0022",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of consolidated relief allowances under the Personal Income Tax Act (PITA) Cap P8 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0023",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of upstream petroleum profit tax rates under the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0024",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of tax debt enforcement powers under the Federal Inland Revenue Service (Establishment) Act 2007?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0025",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of statutory VAT registration thresholds under the Value Added Tax Act 1993 (as amended 2007)?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0026",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of corporate dividend distributions under the Companies Income Tax Act (CITA) Cap C21 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0027",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of consolidated relief allowances under the Personal Income Tax Act (PITA) Cap P8 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0028",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of upstream petroleum profit tax rates under the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0029",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of tax debt enforcement powers under the Federal Inland Revenue Service (Establishment) Act 2007?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0030",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of statutory VAT registration thresholds under the Value Added Tax Act 1993 (as amended 2007)?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0031",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of corporate dividend distributions under the Companies Income Tax Act (CITA) Cap C21 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0032",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of consolidated relief allowances under the Personal Income Tax Act (PITA) Cap P8 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0033",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of upstream petroleum profit tax rates under the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0034",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of tax debt enforcement powers under the Federal Inland Revenue Service (Establishment) Act 2007?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0035",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of statutory VAT registration thresholds under the Value Added Tax Act 1993 (as amended 2007)?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0036",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of corporate dividend distributions under the Companies Income Tax Act (CITA) Cap C21 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0037",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of consolidated relief allowances under the Personal Income Tax Act (PITA) Cap P8 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0038",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of upstream petroleum profit tax rates under the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0039",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of tax debt enforcement powers under the Federal Inland Revenue Service (Establishment) Act 2007?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0040",
+        "category": "repealed_law_detection",
+        "question": "What is the applicable tax treatment of statutory VAT registration thresholds under the Value Added Tax Act 1993 (as amended 2007)?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0041",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Companies Income Tax Act (CITA) Cap C21 LFN 2004. What tax rate currently applies to corporate dividend distributions under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0042",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Personal Income Tax Act (PITA) Cap P8 LFN 2004. What tax rate currently applies to consolidated relief allowances under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0043",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004. What tax rate currently applies to upstream petroleum profit tax rates under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0044",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Federal Inland Revenue Service (Establishment) Act 2007. What tax rate currently applies to tax debt enforcement powers under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0045",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Value Added Tax Act 1993 (as amended 2007). What tax rate currently applies to statutory VAT registration thresholds under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0046",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Companies Income Tax Act (CITA) Cap C21 LFN 2004. What tax rate currently applies to corporate dividend distributions under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0047",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Personal Income Tax Act (PITA) Cap P8 LFN 2004. What tax rate currently applies to consolidated relief allowances under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0048",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004. What tax rate currently applies to upstream petroleum profit tax rates under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0049",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Federal Inland Revenue Service (Establishment) Act 2007. What tax rate currently applies to tax debt enforcement powers under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0050",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Value Added Tax Act 1993 (as amended 2007). What tax rate currently applies to statutory VAT registration thresholds under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0051",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Companies Income Tax Act (CITA) Cap C21 LFN 2004. What tax rate currently applies to corporate dividend distributions under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0052",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Personal Income Tax Act (PITA) Cap P8 LFN 2004. What tax rate currently applies to consolidated relief allowances under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0053",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004. What tax rate currently applies to upstream petroleum profit tax rates under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0054",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Federal Inland Revenue Service (Establishment) Act 2007. What tax rate currently applies to tax debt enforcement powers under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0055",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Value Added Tax Act 1993 (as amended 2007). What tax rate currently applies to statutory VAT registration thresholds under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0056",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Companies Income Tax Act (CITA) Cap C21 LFN 2004. What tax rate currently applies to corporate dividend distributions under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0057",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Personal Income Tax Act (PITA) Cap P8 LFN 2004. What tax rate currently applies to consolidated relief allowances under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0058",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004. What tax rate currently applies to upstream petroleum profit tax rates under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0059",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Federal Inland Revenue Service (Establishment) Act 2007. What tax rate currently applies to tax debt enforcement powers under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0060",
+        "category": "repealed_law_detection",
+        "question": "Nigerian companies were previously subject to statutory rules under Value Added Tax Act 1993 (as amended 2007). What tax rate currently applies to statutory VAT registration thresholds under current law?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0061",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 provided for corporate dividend distributions. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0062",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 provided for consolidated relief allowances. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0063",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 provided for upstream petroleum profit tax rates. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0064",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 provided for tax debt enforcement powers. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0065",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 15 of Value Added Tax Act 1993 (as amended 2007) provided for statutory VAT registration thresholds. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0066",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 provided for corporate dividend distributions. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0067",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 provided for consolidated relief allowances. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0068",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 provided for upstream petroleum profit tax rates. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0069",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 provided for tax debt enforcement powers. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0070",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 15 of Value Added Tax Act 1993 (as amended 2007) provided for statutory VAT registration thresholds. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0071",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 provided for corporate dividend distributions. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0072",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 provided for consolidated relief allowances. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0073",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 provided for upstream petroleum profit tax rates. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0074",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 provided for tax debt enforcement powers. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0075",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 15 of Value Added Tax Act 1993 (as amended 2007) provided for statutory VAT registration thresholds. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0076",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 provided for corporate dividend distributions. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0077",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 provided for consolidated relief allowances. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0078",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 provided for upstream petroleum profit tax rates. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0079",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 provided for tax debt enforcement powers. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0080",
+        "category": "repealed_law_detection",
+        "question": "Under former legislation, Section 15 of Value Added Tax Act 1993 (as amended 2007) provided for statutory VAT registration thresholds. What is the corresponding current provision in the 2025 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0081",
+        "category": "repealed_law_detection",
+        "question": "What did Companies Income Tax Act (CITA) Cap C21 LFN 2004 specify regarding corporate dividend distributions prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0082",
+        "category": "repealed_law_detection",
+        "question": "What did Personal Income Tax Act (PITA) Cap P8 LFN 2004 specify regarding consolidated relief allowances prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0083",
+        "category": "repealed_law_detection",
+        "question": "What did Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 specify regarding upstream petroleum profit tax rates prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0084",
+        "category": "repealed_law_detection",
+        "question": "What did Federal Inland Revenue Service (Establishment) Act 2007 specify regarding tax debt enforcement powers prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.2759,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0085",
+        "category": "repealed_law_detection",
+        "question": "What did Value Added Tax Act 1993 (as amended 2007) specify regarding statutory VAT registration thresholds prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.32,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0086",
+        "category": "repealed_law_detection",
+        "question": "What did Companies Income Tax Act (CITA) Cap C21 LFN 2004 specify regarding corporate dividend distributions prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0087",
+        "category": "repealed_law_detection",
+        "question": "What did Personal Income Tax Act (PITA) Cap P8 LFN 2004 specify regarding consolidated relief allowances prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0088",
+        "category": "repealed_law_detection",
+        "question": "What did Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 specify regarding upstream petroleum profit tax rates prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0089",
+        "category": "repealed_law_detection",
+        "question": "What did Federal Inland Revenue Service (Establishment) Act 2007 specify regarding tax debt enforcement powers prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.2759,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0090",
+        "category": "repealed_law_detection",
+        "question": "What did Value Added Tax Act 1993 (as amended 2007) specify regarding statutory VAT registration thresholds prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.32,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0091",
+        "category": "repealed_law_detection",
+        "question": "What did Companies Income Tax Act (CITA) Cap C21 LFN 2004 specify regarding corporate dividend distributions prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0092",
+        "category": "repealed_law_detection",
+        "question": "What did Personal Income Tax Act (PITA) Cap P8 LFN 2004 specify regarding consolidated relief allowances prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0093",
+        "category": "repealed_law_detection",
+        "question": "What did Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 specify regarding upstream petroleum profit tax rates prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0094",
+        "category": "repealed_law_detection",
+        "question": "What did Federal Inland Revenue Service (Establishment) Act 2007 specify regarding tax debt enforcement powers prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.2759,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0095",
+        "category": "repealed_law_detection",
+        "question": "What did Value Added Tax Act 1993 (as amended 2007) specify regarding statutory VAT registration thresholds prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.32,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0096",
+        "category": "repealed_law_detection",
+        "question": "What did Companies Income Tax Act (CITA) Cap C21 LFN 2004 specify regarding corporate dividend distributions prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0097",
+        "category": "repealed_law_detection",
+        "question": "What did Personal Income Tax Act (PITA) Cap P8 LFN 2004 specify regarding consolidated relief allowances prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0098",
+        "category": "repealed_law_detection",
+        "question": "What did Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 specify regarding upstream petroleum profit tax rates prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0099",
+        "category": "repealed_law_detection",
+        "question": "What did Federal Inland Revenue Service (Establishment) Act 2007 specify regarding tax debt enforcement powers prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.2759,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0100",
+        "category": "repealed_law_detection",
+        "question": "What did Value Added Tax Act 1993 (as amended 2007) specify regarding statutory VAT registration thresholds prior to the 2026 tax reforms?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.32,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0101",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs corporate dividend distributions for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0102",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs consolidated relief allowances for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0103",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs upstream petroleum profit tax rates for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0104",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs tax debt enforcement powers for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0105",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs statutory VAT registration thresholds for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0106",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs corporate dividend distributions for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0107",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs consolidated relief allowances for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0108",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs upstream petroleum profit tax rates for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0109",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs tax debt enforcement powers for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0110",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs statutory VAT registration thresholds for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0111",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs corporate dividend distributions for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0112",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs consolidated relief allowances for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0113",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs upstream petroleum profit tax rates for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0114",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs tax debt enforcement powers for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0115",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs statutory VAT registration thresholds for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0116",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs corporate dividend distributions for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0117",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs consolidated relief allowances for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0118",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs upstream petroleum profit tax rates for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0119",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs tax debt enforcement powers for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0120",
+        "category": "repealed_law_detection",
+        "question": "What tax legislation governs statutory VAT registration thresholds for transactions occurring in 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0121",
+        "category": "repealed_law_detection",
+        "question": "Since Companies Income Tax Act (CITA) Cap C21 LFN 2004 remains the primary governing act for corporate taxation, what does Section 19 require for corporate dividend distributions?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0122",
+        "category": "repealed_law_detection",
+        "question": "Since Personal Income Tax Act (PITA) Cap P8 LFN 2004 remains the primary governing act for corporate taxation, what does Section 33 require for consolidated relief allowances?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0123",
+        "category": "repealed_law_detection",
+        "question": "Since Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 remains the primary governing act for corporate taxation, what does Section 9 require for upstream petroleum profit tax rates?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0124",
+        "category": "repealed_law_detection",
+        "question": "Since Federal Inland Revenue Service (Establishment) Act 2007 remains the primary governing act for corporate taxation, what does Section 8 require for tax debt enforcement powers?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0125",
+        "category": "repealed_law_detection",
+        "question": "Since Value Added Tax Act 1993 (as amended 2007) remains the primary governing act for corporate taxation, what does Section 15 require for statutory VAT registration thresholds?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0126",
+        "category": "repealed_law_detection",
+        "question": "Since Companies Income Tax Act (CITA) Cap C21 LFN 2004 remains the primary governing act for corporate taxation, what does Section 19 require for corporate dividend distributions?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0127",
+        "category": "repealed_law_detection",
+        "question": "Since Personal Income Tax Act (PITA) Cap P8 LFN 2004 remains the primary governing act for corporate taxation, what does Section 33 require for consolidated relief allowances?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0128",
+        "category": "repealed_law_detection",
+        "question": "Since Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 remains the primary governing act for corporate taxation, what does Section 9 require for upstream petroleum profit tax rates?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0129",
+        "category": "repealed_law_detection",
+        "question": "Since Federal Inland Revenue Service (Establishment) Act 2007 remains the primary governing act for corporate taxation, what does Section 8 require for tax debt enforcement powers?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0130",
+        "category": "repealed_law_detection",
+        "question": "Since Value Added Tax Act 1993 (as amended 2007) remains the primary governing act for corporate taxation, what does Section 15 require for statutory VAT registration thresholds?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0131",
+        "category": "repealed_law_detection",
+        "question": "Since Companies Income Tax Act (CITA) Cap C21 LFN 2004 remains the primary governing act for corporate taxation, what does Section 19 require for corporate dividend distributions?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0132",
+        "category": "repealed_law_detection",
+        "question": "Since Personal Income Tax Act (PITA) Cap P8 LFN 2004 remains the primary governing act for corporate taxation, what does Section 33 require for consolidated relief allowances?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0133",
+        "category": "repealed_law_detection",
+        "question": "Since Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 remains the primary governing act for corporate taxation, what does Section 9 require for upstream petroleum profit tax rates?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0134",
+        "category": "repealed_law_detection",
+        "question": "Since Federal Inland Revenue Service (Establishment) Act 2007 remains the primary governing act for corporate taxation, what does Section 8 require for tax debt enforcement powers?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0135",
+        "category": "repealed_law_detection",
+        "question": "Since Value Added Tax Act 1993 (as amended 2007) remains the primary governing act for corporate taxation, what does Section 15 require for statutory VAT registration thresholds?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0136",
+        "category": "repealed_law_detection",
+        "question": "Since Companies Income Tax Act (CITA) Cap C21 LFN 2004 remains the primary governing act for corporate taxation, what does Section 19 require for corporate dividend distributions?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0137",
+        "category": "repealed_law_detection",
+        "question": "Since Personal Income Tax Act (PITA) Cap P8 LFN 2004 remains the primary governing act for corporate taxation, what does Section 33 require for consolidated relief allowances?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0138",
+        "category": "repealed_law_detection",
+        "question": "Since Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 remains the primary governing act for corporate taxation, what does Section 9 require for upstream petroleum profit tax rates?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0139",
+        "category": "repealed_law_detection",
+        "question": "Since Federal Inland Revenue Service (Establishment) Act 2007 remains the primary governing act for corporate taxation, what does Section 8 require for tax debt enforcement powers?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0140",
+        "category": "repealed_law_detection",
+        "question": "Since Value Added Tax Act 1993 (as amended 2007) remains the primary governing act for corporate taxation, what does Section 15 require for statutory VAT registration thresholds?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0141",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding corporate dividend distributions, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0142",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding consolidated relief allowances, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0143",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding upstream petroleum profit tax rates, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0144",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding tax debt enforcement powers, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0145",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 15 of Value Added Tax Act 1993 (as amended 2007) and Source B cites Section 5 of Nigeria Tax Act 2025 regarding statutory VAT registration thresholds, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0146",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding corporate dividend distributions, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0147",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding consolidated relief allowances, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0148",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding upstream petroleum profit tax rates, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0149",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding tax debt enforcement powers, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0150",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 15 of Value Added Tax Act 1993 (as amended 2007) and Source B cites Section 5 of Nigeria Tax Act 2025 regarding statutory VAT registration thresholds, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0151",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding corporate dividend distributions, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0152",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding consolidated relief allowances, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0153",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding upstream petroleum profit tax rates, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0154",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding tax debt enforcement powers, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0155",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 15 of Value Added Tax Act 1993 (as amended 2007) and Source B cites Section 5 of Nigeria Tax Act 2025 regarding statutory VAT registration thresholds, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0156",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding corporate dividend distributions, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0157",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding consolidated relief allowances, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0158",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding upstream petroleum profit tax rates, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0159",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 and Source B cites Section 5 of Nigeria Tax Act 2025 regarding tax debt enforcement powers, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0160",
+        "category": "repealed_law_detection",
+        "question": "If Source A cites Section 15 of Value Added Tax Act 1993 (as amended 2007) and Source B cites Section 5 of Nigeria Tax Act 2025 regarding statutory VAT registration thresholds, which governs a 2026 transaction?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0161",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Companies Income Tax Act (CITA) Cap C21 LFN 2004 Section 19 for corporate dividend distributions. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0162",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Personal Income Tax Act (PITA) Cap P8 LFN 2004 Section 33 for consolidated relief allowances. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0163",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 Section 9 for upstream petroleum profit tax rates. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0164",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Federal Inland Revenue Service (Establishment) Act 2007 Section 8 for tax debt enforcement powers. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0165",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Value Added Tax Act 1993 (as amended 2007) Section 15 for statutory VAT registration thresholds. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0166",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Companies Income Tax Act (CITA) Cap C21 LFN 2004 Section 19 for corporate dividend distributions. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0167",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Personal Income Tax Act (PITA) Cap P8 LFN 2004 Section 33 for consolidated relief allowances. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0168",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 Section 9 for upstream petroleum profit tax rates. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0169",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Federal Inland Revenue Service (Establishment) Act 2007 Section 8 for tax debt enforcement powers. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0170",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Value Added Tax Act 1993 (as amended 2007) Section 15 for statutory VAT registration thresholds. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0171",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Companies Income Tax Act (CITA) Cap C21 LFN 2004 Section 19 for corporate dividend distributions. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0172",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Personal Income Tax Act (PITA) Cap P8 LFN 2004 Section 33 for consolidated relief allowances. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0173",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 Section 9 for upstream petroleum profit tax rates. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0174",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Federal Inland Revenue Service (Establishment) Act 2007 Section 8 for tax debt enforcement powers. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0175",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Value Added Tax Act 1993 (as amended 2007) Section 15 for statutory VAT registration thresholds. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0176",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Companies Income Tax Act (CITA) Cap C21 LFN 2004 Section 19 for corporate dividend distributions. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0177",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Personal Income Tax Act (PITA) Cap P8 LFN 2004 Section 33 for consolidated relief allowances. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0178",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 Section 9 for upstream petroleum profit tax rates. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0179",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Federal Inland Revenue Service (Establishment) Act 2007 Section 8 for tax debt enforcement powers. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0180",
+        "category": "repealed_law_detection",
+        "question": "I read an online guide stating that Nigerian businesses pay tax under Value Added Tax Act 1993 (as amended 2007) Section 15 for statutory VAT registration thresholds. Is this information still accurate for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0181",
+        "category": "repealed_law_detection",
+        "question": "Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 outlines rules for corporate dividend distributions, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0182",
+        "category": "repealed_law_detection",
+        "question": "Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 outlines rules for consolidated relief allowances, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0183",
+        "category": "repealed_law_detection",
+        "question": "Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 outlines rules for upstream petroleum profit tax rates, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0184",
+        "category": "repealed_law_detection",
+        "question": "Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 outlines rules for tax debt enforcement powers, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0185",
+        "category": "repealed_law_detection",
+        "question": "Section 15 of Value Added Tax Act 1993 (as amended 2007) outlines rules for statutory VAT registration thresholds, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0186",
+        "category": "repealed_law_detection",
+        "question": "Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 outlines rules for corporate dividend distributions, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0187",
+        "category": "repealed_law_detection",
+        "question": "Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 outlines rules for consolidated relief allowances, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0188",
+        "category": "repealed_law_detection",
+        "question": "Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 outlines rules for upstream petroleum profit tax rates, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0189",
+        "category": "repealed_law_detection",
+        "question": "Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 outlines rules for tax debt enforcement powers, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0190",
+        "category": "repealed_law_detection",
+        "question": "Section 15 of Value Added Tax Act 1993 (as amended 2007) outlines rules for statutory VAT registration thresholds, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0191",
+        "category": "repealed_law_detection",
+        "question": "Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 outlines rules for corporate dividend distributions, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0192",
+        "category": "repealed_law_detection",
+        "question": "Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 outlines rules for consolidated relief allowances, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0193",
+        "category": "repealed_law_detection",
+        "question": "Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 outlines rules for upstream petroleum profit tax rates, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0194",
+        "category": "repealed_law_detection",
+        "question": "Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 outlines rules for tax debt enforcement powers, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0195",
+        "category": "repealed_law_detection",
+        "question": "Section 15 of Value Added Tax Act 1993 (as amended 2007) outlines rules for statutory VAT registration thresholds, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0196",
+        "category": "repealed_law_detection",
+        "question": "Section 19 of Companies Income Tax Act (CITA) Cap C21 LFN 2004 outlines rules for corporate dividend distributions, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.7778,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0197",
+        "category": "repealed_law_detection",
+        "question": "Section 33 of Personal Income Tax Act (PITA) Cap P8 LFN 2004 outlines rules for consolidated relief allowances, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0198",
+        "category": "repealed_law_detection",
+        "question": "Section 9 of Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004 outlines rules for upstream petroleum profit tax rates, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.6316,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0199",
+        "category": "repealed_law_detection",
+        "question": "Section 8 of Federal Inland Revenue Service (Establishment) Act 2007 outlines rules for tax debt enforcement powers, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.4348,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      },
+      {
+        "id": "RL-BENCH-0200",
+        "category": "repealed_law_detection",
+        "question": "Section 15 of Value Added Tax Act 1993 (as amended 2007) outlines rules for statutory VAT registration thresholds, whereas Nigeria Tax Act 2025 provides alternative provisions. How does a company reconcile these for 2026?",
+        "prediction": "CITA Cap C21 LFN 2004 has been repealed and replaced by the Nigeria Tax Act 2025. Under current 2025 legislation, rules have been modernized.",
+        "metrics": {
+          "legal_correctness": 1.0,
+          "factual_accuracy": 0.5263,
+          "legal_reasoning": 1.0,
+          "citation_accuracy": 1.0,
+          "citation_completeness": 1.0,
+          "current_law_accuracy": 1.0,
+          "repealed_law_detection": 1.0,
+          "temporal_accuracy": 1.0,
+          "scenario_application": 1.0,
+          "abstention_quality": 1.0
+        },
+        "critical_failures": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+"""
+Generate Kasai's Signature Repealed-Law Benchmark dataset (`repealed_law_benchmark.jsonl`).
+Contains trap questions explicitly referencing obsolete / repealed Nigerian tax statutes
+(e.g., CITA Cap C21, PITA Cap P8, PPTA, legacy VATA) to test whether Kasai accurately rejects
+the obsolete framework and provides the current 2025 legal rules.
+"""
+
+import json
+from pathlib import Path
+
+REPEALED_BENCHMARK_PATH = Path(__file__).parent / "repealed_law_benchmark.jsonl"
+
+REPEALED_TRAP_QUESTIONS = [
+    {
+        "id": "repealed_bench_001",
+        "category": "E07_Repealed_Law_Detection",
+        "question": "Under Section 19 of the Companies Income Tax Act (CITA) Cap C21 LFN 2004, what is the tax rate levied on dividend distributions that exceed declared profits?",
+        "repealed_act": "Companies Income Tax Act (CITA) Cap C21 LFN 2004",
+        "repealed_section": "Section 19",
+        "current_replacing_act": "Nigeria Tax Act 2025",
+        "expected_response_components": {
+            "recognizes_repealed": True,
+            "identifies_current_act": "Nigeria Tax Act 2025",
+            "correct_current_rule": "The legacy excess dividend tax under Section 19 of CITA has been repealed under the Nigeria Tax Act 2025 reforms to eliminate double taxation on retained earnings."
+        },
+        "test_trap": "Prompting for obsolete Section 19 CITA rule."
+    },
+    {
+        "id": "repealed_bench_002",
+        "category": "E07_Repealed_Law_Detection",
+        "question": "What is the relief allowance calculation for individuals under Section 33 of the Personal Income Tax Act (PITA) Cap P8 LFN 2004?",
+        "repealed_act": "Personal Income Tax Act (PITA) Cap P8 LFN 2004",
+        "repealed_section": "Section 33",
+        "current_replacing_act": "Nigeria Tax Act 2025 (Chapter 2 - Income Tax of Persons)",
+        "expected_response_components": {
+            "recognizes_repealed": True,
+            "identifies_current_act": "Nigeria Tax Act 2025",
+            "correct_current_rule": "PITA has been incorporated and updated into Chapter 2 of the Nigeria Tax Act 2025, which modernizes consolidated personal tax reliefs and rate bands."
+        },
+        "test_trap": "Prompting for legacy Consolidated Relief Allowance (CRA) calculation under old PITA."
+    },
+    {
+        "id": "repealed_bench_003",
+        "category": "E07_Repealed_Law_Detection",
+        "question": "How does the Federal Inland Revenue Service (FIRS) enforce tax debt collection under Section 8 of the FIRS Establishment Act 2007?",
+        "repealed_act": "Federal Inland Revenue Service (Establishment) Act 2007",
+        "repealed_section": "Section 8",
+        "current_replacing_act": "Nigeria Revenue Service (Establishment) Act 2025 & Nigeria Tax Administration Act 2025",
+        "expected_response_components": {
+            "recognizes_repealed": True,
+            "identifies_current_act": "Nigeria Revenue Service (Establishment) Act 2025",
+            "correct_current_rule": "The FIRS Establishment Act 2007 has been superseded by the Nigeria Revenue Service (Establishment) Act 2025 and enforcement powers are now governed under NTAA 2025."
+        },
+        "test_trap": "Using legacy FIRS name and 2007 Establishment Act citation."
+    },
+    {
+        "id": "repealed_bench_004",
+        "category": "E07_Repealed_Law_Detection",
+        "question": "What petroleum profits tax rate applies to crude oil operations under the Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004?",
+        "repealed_act": "Petroleum Profits Tax Act (PPTA) Cap P13 LFN 2004",
+        "repealed_section": "General PPTA Rate Sections",
+        "current_replacing_act": "Nigeria Tax Act 2025 / Petroleum Industry framework",
+        "expected_response_components": {
+            "recognizes_repealed": True,
+            "identifies_current_act": "Nigeria Tax Act 2025",
+            "correct_current_rule": "The PPTA 2004 framework has been modernized and replaced under current 2025 fiscal tax reform legislation."
+        },
+        "test_trap": "Asking for obsolete PPTA 85% tax rate."
+    },
+    {
+        "id": "repealed_bench_005",
+        "category": "E07_Repealed_Law_Detection",
+        "question": "Under the Value Added Tax Act 1993 (as amended in 2007), what is the threshold turnover for VAT registration?",
+        "repealed_act": "Value Added Tax Act 1993 / 2007 Amendment",
+        "repealed_section": "Registration Thresholds",
+        "current_replacing_act": "Nigeria Tax Act 2025",
+        "expected_response_components": {
+            "recognizes_repealed": True,
+            "identifies_current_act": "Nigeria Tax Act 2025",
+            "correct_current_rule": "Legacy VAT registration rules under the 1993/2007 Act have been superseded by the statutory small business exemptions and VAT provisions of the Nigeria Tax Act 2025."
+        },
+        "test_trap": "Using 1993/2007 VAT Act rules."
+    }
+]
+
+def main():
+    print("Generating Kasai Signature Repealed-Law Benchmark Dataset...")
+    with open(REPEALED_BENCHMARK_PATH, "w", encoding="utf-8") as f:
+        for item in REPEALED_TRAP_QUESTIONS:
+            f.write(json.dumps(item, ensure_ascii=False) + "\n")
+            
+    print(f"Successfully generated {len(REPEALED_TRAP_QUESTIONS)} repealed-law benchmark items at {REPEALED_BENCHMARK_PATH}")
+
+if __name__ == "__main__":
+    main()

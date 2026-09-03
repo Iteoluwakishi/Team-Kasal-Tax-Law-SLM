@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "categories": [
+    {
+      "code": "FA",
+      "id": "factual_accuracy",
+      "name": "Factual Accuracy",
+      "question_type": "Type A — Direct factual questions",
+      "target_percentage": 15,
+      "description": "Tests accuracy of tax rates, thresholds, filing deadlines, and statutory definitions."
+    },
+    {
+      "code": "LI",
+      "id": "legal_interpretation",
+      "name": "Legal Interpretation",
+      "question_type": "Type B — Interpretation questions",
+      "target_percentage": 12,
+      "description": "Tests correct interpretation of scope, intent, and applicability of statutory provisions."
+    },
+    {
+      "code": "LR",
+      "id": "legal_reasoning",
+      "name": "Legal Reasoning",
+      "question_type": "Type C — Multi-step reasoning",
+      "target_percentage": 12,
+      "description": "Tests ability to connect multiple provisions logically to derive a sound legal conclusion."
+    },
+    {
+      "code": "CA",
+      "id": "citation_accuracy",
+      "name": "Citation Accuracy",
+      "question_type": "Type D — Citation questions",
+      "target_percentage": 10,
+      "description": "Verifies that cited section numbers directly support the stated legal claim."
+    },
+    {
+      "code": "CC",
+      "id": "citation_completeness",
+      "name": "Citation Completeness",
+      "question_type": "Type D — Citation questions",
+      "target_percentage": 8,
+      "description": "Measures whether all substantive legal assertions carry valid citations."
+    },
+    {
+      "code": "CL",
+      "id": "current_law_recognition",
+      "name": "Current-Law Recognition",
+      "question_type": "Type G — Current-Law Recognition",
+      "target_percentage": 10,
+      "description": "Ensures priority of active 2024/2025 legal framework over legacy frameworks."
+    },
+    {
+      "code": "RL",
+      "id": "repealed_law_detection",
+      "name": "Repealed-Law Detection",
+      "question_type": "Type G — Adversarial questions (Signature Benchmark)",
+      "target_percentage": 10,
+      "description": "Kasai Signature Benchmark: Tests detection and rejection of obsolete/repealed statutes."
+    },
+    {
+      "code": "TR",
+      "id": "temporal_reasoning",
+      "name": "Temporal Reasoning",
+      "question_type": "Type F — Temporal questions",
+      "target_percentage": 8,
+      "description": "Evaluates handling of date/tax year transitions and prospective/retrospective application."
+    },
+    {
+      "code": "SA",
+      "id": "scenario_application",
+      "name": "Scenario / Application",
+      "question_type": "Type E — Scenario questions",
+      "target_percentage": 10,
+      "description": "Tests multi-fact real-world SME business application queries."
+    },
+    {
+      "code": "AB",
+      "id": "abstention",
+      "name": "Abstention",
+      "question_type": "Type H — Unanswerable questions",
+      "target_percentage": 5,
+      "description": "Measures appropriate refusal to answer underspecified or ambiguous queries."
+    }
+  ]
+}

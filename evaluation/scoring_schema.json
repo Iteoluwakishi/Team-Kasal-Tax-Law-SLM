@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "scoring_framework": {
+    "metrics": [
+      {
+        "id": "legal_correctness",
+        "name": "Legal Correctness",
+        "weight": 0.20,
+        "scale": "0-1",
+        "description": "Measures whether the model arrived at the legally correct conclusion."
+      },
+      {
+        "id": "factual_accuracy",
+        "name": "Factual Accuracy",
+        "weight": 0.15,
+        "scale": "ratio",
+        "formula": "correct_factual_claims / total_factual_claims",
+        "description": "Claim-level ratio of accurate factual claims to total factual claims made."
+      },
+      {
+        "id": "legal_reasoning",
+        "name": "Legal Reasoning",
+        "weight": 0.15,
+        "scale": "5-level",
+        "rubric": {
+          "1.0": "Reasoning is legally and logically sound",
+          "0.75": "Mostly sound; minor omission",
+          "0.50": "Partially sound; significant gap",
+          "0.25": "Some relevant reasoning but largely flawed",
+          "0.0": "Incorrect or unsupported reasoning"
+        },
+        "description": "5-level granular scale measuring logical steps connecting facts to law."
+      },
+      {
+        "id": "citation_accuracy",
+        "name": "Citation Accuracy",
+        "weight": 0.10,
+        "scale": "ratio",
+        "formula": "supporting_citations / total_evaluated_citations",
+        "description": "Measures whether cited provisions actually support the associated claims."
+      },
+      {
+        "id": "citation_completeness",
+        "name": "Citation Completeness",
+        "weight": 0.05,
+        "scale": "ratio",
+        "formula": "cited_substantive_claims / total_substantive_claims",
+        "description": "Measures whether key substantive legal assertions carry citations."
+      },
+      {
+        "id": "current_law_accuracy",
+        "name": "Current-Law Accuracy",
+        "weight": 0.10,
+        "scale": "0-1",
+        "description": "Measures whether active 2024/2025 legislation was identified and applied."
+      },
+      {
+        "id": "repealed_law_detection",
+        "name": "Repealed-Law Detection",
+        "weight": 0.10,
+        "scale": "0-1",
+        "sub_metrics": [
+          "recognizes_repealed",
+          "identifies_current_act",
+          "provides_correct_rule"
+        ],
+        "description": "Kasai Signature Metric: Detects and rejects obsolete legislation."
+      },
+      {
+        "id": "temporal_accuracy",
+        "name": "Temporal Accuracy",
+        "weight": 0.05,
+        "scale": "0-1",
+        "description": "Measures whether the correct law for the target date/tax year was applied."
+      },
+      {
+        "id": "scenario_application",
+        "name": "Scenario Application",
+        "weight": 0.05,
+        "scale": "0-1",
+        "description": "Measures ability to apply legal rules to complex multi-fact SME scenarios."
+      },
+      {
+        "id": "abstention_quality",
+        "name": "Abstention Quality",
+        "weight": 0.05,
+        "scale": "0-1",
+        "description": "Measures appropriate refusal to answer underspecified or ambiguous queries."
+      }
+    ],
+    "critical_failures": [
+      {
+        "code": "CF-01",
+        "name": "Treating repealed legislation as current",
+        "severity": "critical"
+      },
+      {
+        "code": "CF-02",
+        "name": "Inventing a statutory provision",
+        "severity": "critical"
+      },
+      {
+        "code": "CF-03",
+        "name": "Fabricating a citation",
+        "severity": "critical"
+      },
+      {
+        "code": "CF-04",
+        "name": "Giving a materially incorrect tax rate",
+        "severity": "critical"
+      },
+      {
+        "code": "CF-05",
+        "name": "Ignoring relevant effective date boundaries",
+        "severity": "major"
+      },
+      {
+        "code": "CF-06",
+        "name": "Confidently answering an unanswerable legal question",
+        "severity": "major"
+      }
+    ]
+  }
+}

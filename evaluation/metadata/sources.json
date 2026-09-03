@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "legal_sources": [
+    {
+      "code": "NTA_2025",
+      "short_title": "NTA 2025",
+      "full_title": "Nigeria Tax Act, 2025",
+      "status": "active",
+      "gazette_notice": "Official Gazette No. 117, Vol. 112",
+      "effective_date": "2026-01-01"
+    },
+    {
+      "code": "NTAA_2025",
+      "short_title": "NTAA 2025",
+      "full_title": "Nigeria Tax Administration Act, 2025",
+      "status": "active",
+      "gazette_notice": "Official Gazette 2025",
+      "effective_date": "2026-01-01"
+    },
+    {
+      "code": "NRSEA_2025",
+      "short_title": "NRS Act 2025",
+      "full_title": "Nigeria Revenue Service (Establishment) Act, 2025",
+      "status": "active",
+      "effective_date": "2025-01-01"
+    },
+    {
+      "code": "JRBA_2025",
+      "short_title": "JRB Act 2025",
+      "full_title": "Joint Revenue Board of Nigeria (Establishment) Act, 2025",
+      "status": "active",
+      "effective_date": "2025-01-01"
+    },
+    {
+      "code": "WHT_2024",
+      "short_title": "WHT Regulations 2024",
+      "full_title": "Deduction of Tax at Source (Withholding) Regulations 2024",
+      "status": "active",
+      "effective_date": "2024-07-01"
+    },
+    {
+      "code": "CITA_2004",
+      "short_title": "CITA 2004",
+      "full_title": "Companies Income Tax Act Cap C21 LFN 2004",
+      "status": "repealed",
+      "superseded_by": "Nigeria Tax Act 2025"
+    },
+    {
+      "code": "PITA_2004",
+      "short_title": "PITA 2004",
+      "full_title": "Personal Income Tax Act Cap P8 LFN 2004",
+      "status": "repealed",
+      "superseded_by": "Nigeria Tax Act 2025"
+    },
+    {
+      "code": "PPTA_2004",
+      "short_title": "PPTA 2004",
+      "full_title": "Petroleum Profits Tax Act Cap P13 LFN 2004",
+      "status": "repealed",
+      "superseded_by": "Nigeria Tax Act 2025"
+    },
+    {
+      "code": "FIRS_2007",
+      "short_title": "FIRS Act 2007",
+      "full_title": "Federal Inland Revenue Service (Establishment) Act 2007",
+      "status": "repealed",
+      "superseded_by": "Nigeria Revenue Service (Establishment) Act 2025"
+    }
+  ]
+}

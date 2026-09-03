@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "KasaiRepealedLawBenchmarkItem",
+  "type": "object",
+  "required": [
+    "id",
+    "category",
+    "trap_type",
+    "question",
+    "expected_answer",
+    "expected_behavior",
+    "current_legislation",
+    "repealed_legislation",
+    "gold_citations",
+    "difficulty",
+    "severity_if_wrong",
+    "human_verified"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["repealed_law_detection"]
+    },
+    "trap_type": {
+      "type": "string",
+      "enum": [
+        "direct_current_law_trap",
+        "implicit_repealed_law_trap",
+        "old_rate_vs_current_rate",
+        "old_provision_vs_new_provision",
+        "historical_question",
+        "date_based_trap",
+        "false_premise_question",
+        "conflicting_sources",
+        "outdated_internet_info",
+        "mixed_current_repealed"
+      ]
+    },
+    "question": {
+      "type": "string"
+    },
+    "expected_answer": {
+      "type": "string"
+    },
+    "expected_behavior": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "current_legislation": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "section": { "type": "string" },
+        "effective_date": { "type": "string" }
+      }
+    },
+    "repealed_legislation": {
+      "type": "object",
+      "required": ["name", "status"],
+      "properties": {
+        "name": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "gold_citations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document"],
+        "properties": {
+          "document": { "type": "string" },
+          "section": { "type": "string" },
+          "page": { "type": ["integer", "string"] }
+        }
+      }
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard", "adversarial"]
+    },
+    "severity_if_wrong": {
+      "type": "string",
+      "enum": ["critical", "major", "moderate", "minor"]
+    },
+    "human_verified": {
+      "type": "boolean"
+    }
+  }
+}

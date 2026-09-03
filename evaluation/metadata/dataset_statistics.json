@@ -1,0 +1,30 @@
+{
+  "total_items": 14,
+  "splits": {
+    "train_count": 9,
+    "train_percentage": 64.29,
+    "validation_count": 2,
+    "validation_percentage": 14.29,
+    "test_count": 3,
+    "test_percentage": 21.43
+  },
+  "category_distribution": {
+    "repealed_law_detection": 2,
+    "abstention": 1,
+    "scenario_application": 1,
+    "factual_accuracy": 3,
+    "current_law_recognition": 1,
+    "citation_completeness": 1,
+    "legal_interpretation": 2,
+    "legal_reasoning": 1,
+    "temporal_reasoning": 1,
+    "citation_accuracy": 1
+  },
+  "difficulty_distribution": {
+    "adversarial": 2,
+    "medium": 5,
+    "hard": 4,
+    "easy": 3
+  },
+  "schema_compliance": "execution1.txt rich schema v1.0"
+}
