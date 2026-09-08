@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kasai/dataset_schema.json",
+  "title": "Kasai training example",
+  "description": "One instruction-tuning example for the Kasai Nigerian tax-law SLM. Every example must trace back to a provision in the preprocessed corpus (provenance.chunk_id) and carry an explicit legal status so current and repealed law are never mixed silently. Records enter with review.status='pending' and only 'approved' records may reach train/validation/test splits.",
+  "type": "object",
+  "required": [
+    "id", "instruction", "context", "response",
+    "source", "law", "section",
+    "tax_domain", "topic", "question_type", "difficulty",
+    "legal_status", "effective_date",
+    "provenance", "review"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_]*_[0-9]{3,}$",
+      "description": "Stable unique id: uppercase domain/topic prefix + serial, e.g. VAT_001, NRSEA_014."
+    },
+    "instruction": {
+      "type": "string",
+      "minLength": 10,
+      "description": "The question or task, as the end user would ask it."
+    },
+    "context": {
+      "type": "string",
+      "minLength": 20,
+      "description": "The legal provision text the answer is grounded in (verbatim from the corpus chunk, trimmed to what is relevant)."
+    },
+    "response": {
+      "type": "string",
+      "minLength": 20,
+      "description": "The grounded answer. Must be derivable from context and cite its basis; must distinguish current from repealed law where relevant."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Human-readable source title, e.g. 'Nigeria Revenue Service (Establishment) Act, 2025'."
+    },
+    "law": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Short law/document identifier: NRSEA, JRBA, NTA, NTAA, CITA, PITA, VATA, WHT_REGS, NRS_CIRCULAR_2026_01, NRS_FAQ, ..."
+    },
+    "section": {
+      "type": "string",
+      "description": "Section number or unit within the law ('12', '4(2)', a circular heading number like '6.1', or an FAQ topic). Empty string only when the source has no sectioning."
+    },
+    "subsection": {
+      "type": "string",
+      "description": "Optional finer unit, e.g. '(1)(a)'.",
+      "default": ""
+    },
+    "tax_domain": {
+      "type": "string",
+      "enum": [
+        "company_income_tax", "personal_income_tax", "value_added_tax",
+        "paye", "capital_gains", "petroleum_taxation", "stamp_duties",
+        "withholding_tax", "development_levy", "virtual_assets",
+        "tax_administration", "revenue_administration", "general"
+      ],
+      "description": "Provisional domain list; Cecilia's taxonomy.json is the authority and this enum will be regenerated from it."
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Topic within the domain, e.g. 'Registration', 'Tax Rate'. Values from Cecilia's taxonomy once published."
+    },
+    "question_type": {
+      "type": "string",
+      "enum": [
+        "definition", "rate", "threshold", "calculation", "compliance",
+        "exemption", "procedure", "interpretation", "scenario", "comparison"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard", "expert"]
+    },
+    "legal_status": {
+      "type": "string",
+      "enum": ["current", "amended", "repealed", "superseded", "transitional"],
+      "description": "Status of the underlying provision. 'repealed'/'superseded' examples belong to the negative benchmark, never to ordinary training data."
+    },
+    "effective_date": {
+      "type": "string",
+      "pattern": "^([0-9]{4}-[0-9]{2}-[0-9]{2})?$",
+      "description": "ISO date the provision took effect; empty string if unknown."
+    },
+    "replacement_legislation": {
+      "type": "string",
+      "description": "For repealed/superseded provisions: what replaced them. Empty otherwise.",
+      "default": ""
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["chunk_id", "document_id", "source_file"],
+      "additionalProperties": false,
+      "properties": {
+        "chunk_id": {
+          "type": "string",
+          "description": "chunk_id in data/processed/**/*.jsonl this example is grounded in."
+        },
+        "document_id": {"type": "string"},
+        "source_file": {"type": "string"},
+        "page": {"type": ["integer", "null"]},
+        "source_url": {"type": "string", "default": ""}
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["pending", "approved", "rejected", "revise"],
+          "description": "Set by legal reviewers (KeshTech/Cecilia) only. Everything starts 'pending'."
+        },
+        "reviewer": {"type": "string", "default": ""},
+        "notes": {"type": "string", "default": ""}
+      }
+    }
+  }
+}
