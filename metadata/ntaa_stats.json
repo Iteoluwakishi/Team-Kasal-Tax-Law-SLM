@@ -1,12 +1,8 @@
 {
   "document_id": "ntaa",
-  "total_chunks": 365,
+  "total_chunks": 1266,
   "empty_chunks": 0,
-  "total_characters": 439199,
-  "total_words": 73038,
-  "issues": [
-    "Chunk ntaa_chunk_0056 is suspiciously short (<10 chars).",
-    "Chunk ntaa_chunk_0285 is suspiciously short (<10 chars).",
-    "Chunk ntaa_chunk_0318 is suspiciously short (<10 chars)."
-  ]
+  "total_characters": 439168,
+  "total_words": 73920,
+  "issues": []
 }

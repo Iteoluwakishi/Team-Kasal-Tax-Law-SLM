@@ -46,7 +46,7 @@ def parse_and_chunk(text, document_id):
     # For now, we will split by lines that start with a number followed by a dot or parenthesis,
     # or just chunk by paragraphs to satisfy the pipeline requirement without complex NLP.
     
-    paragraphs = re.split(r'(?=\b\d+\.\s)', text)
+    paragraphs = re.split(r'(?=\b\d+[\.).]\s?)', text)
     
     for i, para in enumerate(paragraphs):
         para = para.strip()
@@ -61,6 +61,24 @@ def parse_and_chunk(text, document_id):
         }
         chunks.append(chunk)
         
+    # ---- Merge tiny chunks (less than 15 chars) into the previous chunk ----
+    MIN_CHUNK_LENGTH = 15
+    merged_chunks = []
+    prev_chunk = None
+    for ch in chunks:
+        txt = ch["text"].strip()
+        if len(txt) < MIN_CHUNK_LENGTH:
+            if prev_chunk is not None:
+                # Append short text to previous chunk with a space
+                prev_chunk["text"] = f"{prev_chunk['text']} {txt}".strip()
+                continue
+        # otherwise start a new chunk
+        if prev_chunk is not None:
+            merged_chunks.append(prev_chunk)
+        prev_chunk = ch
+    if prev_chunk is not None:
+        merged_chunks.append(prev_chunk)
+    chunks = merged_chunks
     return chunks
 
 def process_document(input_dir, output_cleaned_dir, output_structured_dir, doc_id):

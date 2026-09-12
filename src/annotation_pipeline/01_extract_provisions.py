@@ -133,11 +133,18 @@ def normalise(chunk: dict, corpus_file: str) -> dict:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--files", nargs="*", help="Specific files to process")
+    args = parser.parse_args()
+
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     kept, dropped = [], {}
     seen_ids = set()
-    for path in sorted(PROCESSED_DIR.rglob("*.jsonl")):
-        if "interim" in path.parts:
+
+    files = [Path(f) for f in args.files] if args.files else sorted(PROCESSED_DIR.rglob("*.jsonl"))
+
+    for path in files:
+        if path.is_dir() or "interim" in path.parts:
             continue
         name = str(path.relative_to(PROCESSED_DIR)).replace("\\", "/")
         n_kept = n_dropped = 0
