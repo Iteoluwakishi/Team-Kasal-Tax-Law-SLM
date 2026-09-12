@@ -1,0 +1,16 @@
+# Team Kasai — training environment dependencies
+# Install with: pip install -r requirements.txt
+# Pinned to versions known to work together with Gemma 3 (transformers >= 4.50
+# is required for gemma3 architecture support). If you bump any of these,
+# re-run training/setup.ipynb and update the recorded versions in README.md —
+# a version drift here is a common source of "works on my machine" bugs.
+
+torch>=2.4.0
+transformers>=4.50.0
+trl>=0.12.0
+peft>=0.13.0
+bitsandbytes>=0.44.0
+accelerate>=1.0.0
+datasets>=3.0.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0

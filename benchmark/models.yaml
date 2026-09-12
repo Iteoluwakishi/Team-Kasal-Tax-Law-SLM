@@ -1,0 +1,32 @@
+# Candidate models for Kasai Phase 3 baseline evaluation.
+# hf_id must be the exact Hugging Face repo id.
+# All five below are UNGATED -- no Hugging Face login/token required at all.
+# (If you want to add Llama or Gemma back in later, they're free but gated:
+# you'd need to accept each one's license on its HF model page and pass an
+# HF_TOKEN, since Meta/Google require that extra step even though the
+# weights themselves are free.)
+models:
+  - name: "SmolLM2-1.7B"
+    hf_id: "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+    params_b: 1.7
+    quantize: false        # small enough to run in fp16/bf16 on modest hardware
+
+  - name: "Qwen2.5-3B"
+    hf_id: "Qwen/Qwen2.5-3B-Instruct"
+    params_b: 3.0
+    quantize: false
+
+  - name: "Phi-3.5-mini"
+    hf_id: "microsoft/Phi-3.5-mini-instruct"
+    params_b: 3.8
+    quantize: true          # 4-bit recommended on consumer GPUs
+
+  - name: "Qwen2.5-7B"
+    hf_id: "Qwen/Qwen2.5-7B-Instruct"
+    params_b: 7.0
+    quantize: true           # 4-bit quantization strongly recommended
+
+generation:
+  max_new_tokens: 300
+  temperature: 0.2   # low temperature for evaluation consistency
+
